@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+img,
+picture,
+video,
+iframe,
+figure,
+canvas {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: initial;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+
+p a {
+    display: inline;
+}
+
+li,
+menu,
+summary {
+    list-style: none;
+}
+
+ol {
+    counter-reset: revert;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em,
+mark,
+del,
+pre,
+code {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    text-wrap: pretty;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+}
+
+textarea {
+    white-space: pre-wrap;
+}
+
+button,
+label {
+    cursor: pointer;
+}
+
+::placeholder {
+    color: unset;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table,
+tr,
+td,
+th,
+thead,
+tbody,
+tfoot {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: inherit;
+}
+
+svg {
+    width: fit-content;
+    min-width: fit-content;
+    display: block;
+    fill: currentColor;
+}
+
+p svg {
+    display: inline;
+    width: initial;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+body {
+    min-height: 100dvh;
+    color: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
